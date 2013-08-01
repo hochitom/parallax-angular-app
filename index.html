@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="ParallaxScrolling">
 <head>
 	<meta charset="UTF-8">
 	<title>Parallax scrolling</title>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="./app.js"></script>
+
 </head>
-<body ng-controller="ParallaxCtrl">
-	<header>
-		<h1>Parallax scrolling Effekts</h1>
-		<h2>done with Angular.js</h2>
+<body ng-controller="ParallaxCtrl" style="overflow-y: hidden;">
+	<header style="height: 5000px; margin-top: 0px;">
+		<h1 ng-style="animation.speed1">Parallax scrolling Effekts</h1>
+		<h2 ng-style="animation.speed2">done with Angular.js</h2>
 	</header>
 </body>
 </html>
